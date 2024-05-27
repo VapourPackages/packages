@@ -1,0 +1,54 @@
+{
+    "name": "example plugin",
+    "author": "VapourPackages",
+    "description": "An example of a plugin for testing and learning purposes.",
+    "repository": "VapourPackages/packages",
+    "type": "VSPlugin",
+    "releases": [
+        {
+            "version": "0.1.0",
+            "published_at": "...",
+            "prerelease": false,
+            "dependencies": [],
+            "repo_source": "github",
+            "assets": [
+                {
+                    "filename": "example.dll",
+                    "sha1": "b0b18f98467e264b4af0be32b65818ce67c9cb98",
+                    "compressed": false
+                },
+                {
+                    "filename": "example.7z",
+                    "sha1": "3fcb022f0a3726cce536b8e73746a88c538e1079",
+                    "compressed": true,
+                    "sources": {
+                        "files": [
+                            {
+                                "filename": "ffms2-5.0-msvc/x64/ffms2.dll",
+                                "sha1": "90357334af0da884d1e238c02767cc46480c56b7"
+                            },
+                            {
+                                "filename": "ffms2-5.0-msvc/x64/ffms2.lib",
+                                "sha1": "d75d7a65478c60cd2bcee7083c4b9634fcda60fc"
+                            },
+                            {
+                                "filename": "ffms2-5.0-msvc/x64/ffmsindex.exe",
+                                "sha1": "6cac948af8cb891280b7da933881cc6c8ad6e143"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "build": {
+                "windows": {
+                    "script": "build_ffms2.bat",
+                    "dependencies": []
+                },
+                "linux": {
+                    "script": "build_ffms2.sh",
+                    "dependencies": []
+                }
+            }
+        }
+    ]
+}

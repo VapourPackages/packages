@@ -1,0 +1,23 @@
+{
+    "name": "example package",
+    "author": "VapourPackages",
+    "description": "An example of a package for testing and learning purposes.",
+    "repository": "VapourPackages/packages",
+    "type": "VSPackage",
+    "releases": [
+        {
+            "version": "0.1.0",
+            "published_at": "...",
+            "prerelease": false,
+            "dependencies": [],
+            "repo_source": "github",
+            "assets": [
+                {
+                    "filename": "example.py",
+                    "sha1": "40129a26355a9ba99c5f2d2672b9ca0ed35d16d8",
+                    "compressed": false
+                }
+            ]
+        }
+    ]
+}
